@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <img class="me-3" src="{% static 'images/Orijinal-removebg-preview 3.png' %}" alt="">
+        <a class="navbar-brand fw-bold" href="#">ClearNews</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active text-primary" href="#">Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+<section class="container my-5 text-center">
+    <textarea class="form-control mb-3" rows="6" placeholder="Enter your article here ..."></textarea>
+    <button class="btn btn-primary">Submit</button>
+</section>
+
+<section class="container text-center">
+    <h4>Detection Accuracy Score</h4>
+    <p>97% Accuracy, 3% False Positive</p>
+
+    <h5>Analysis of your Submission</h5>
+    <p><span class="text-success">✔ Detected Accurate News</span></p>
+    <p><span class="text-danger">✖ Detected False News</span></p>
+</section>
+
+<section class="container my-5 text-center">
+    <h4>Tips for Identifying Fake News</h4>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <ul class="list-unstyled text-start m-0">
+                <li>Check the source: Verify the credibility of the news outlet.</li>
+                <li>Read beyond the headline: Ensure the story is not misleading.</li>
+                <li>Check the author: Look for author credentials and expertise.</li>
+                <li>Examine the date: Ensure the news is current and relevant.</li>
+                <li>Validate with multiple sources: Cross-check with trusted sources.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 text-center">
+    <h5>Reputable News Sources</h5>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <ul class="list-unstyled text-start m-0">
+                <li>The New York Times</li>
+                <li>BBC News</li>
+                <li>The Guardian</li>
+                <li>NPR</li>
+                <li>The Washington Post</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 text-center">
+    <h5>Further Resources on Media Literacy</h5>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <ul class="list-unstyled text-start m-0">
+                <li>Media Literacy Now</li>
+                <li>News Literacy Project</li>
+                <li>Common Sense Media</li>
+                <li>National Association for Media Literacy Education</li>
+                <li>American Press Institute</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>Subscribe to our newsletter</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="input-group">
+                    <input type="text" class="form-control rounded-start-pill" placeholder="Input your email"
+                           aria-label="Recipient's email"
+                           aria-describedby="button-addon2">
+                    <button class="btn btn-primary rounded-end-pill" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 ClearNews | Privacy | Terms | Sitemap</p>
+    </div>
+</footer>
+
+<script src="{% static 'bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

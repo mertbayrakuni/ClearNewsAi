@@ -121,7 +121,7 @@ STATIC_URL = 'static/'
 import os
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'ClearNewsAi/static/node_modules/')
+    os.path.join(BASE_DIR, 'node_modules/')
 ]
 
 # Default primary key field type
